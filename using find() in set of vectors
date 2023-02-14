@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    set<vector<int>> visited;
+    visited.insert({1,2,3});
+    visited.insert({1,2,3});
+     visited.insert({4,5,6});
+    for(auto vec :visited)
+    {
+    for(int value:vec)
+    {
+        cout<<value<<" ";
+    }
+    cout<<endl;
+    }
+    cout<<"\nchecking"<<endl;
+    vector<int> vec1{5,6,7};
+    if(visited.find(vec1)==visited.end())
+    cout<<"not prsent";
+    else
+    cout<<"present";
+
+    return 0;
+}
